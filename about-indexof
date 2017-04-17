@@ -1,0 +1,13 @@
+let findAll=(arr,searchChar)=>{
+	let result=[];
+	let pos=0;
+	let length=arr.length;
+	while(pos<length)
+	{
+		pos=arr.indexOf(searchChar,pos);
+		if(pos===-1) break;
+		result.push(pos);
+		++pos;
+	}
+	return result;
+}
